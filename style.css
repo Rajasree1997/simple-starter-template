@@ -2,5 +2,180 @@
           margin: 0;
           box-sizing: border-box;
       }
-      /* Your code goes here */
+
+     
+html,body,.container{
+    height: 100%;
+}
+body{
+    background-color: #050729;
+}
+
+body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(./assets/images/background.png); 
+    opacity: 0.2;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    color: #baafd1;
+
+} 
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+}
+button{
+    border: 3px solid #FFFFFF;
+    font-size: 20px;
+    border-radius: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 70px;
+    color: #FFFFFF;
+    background: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.side_section{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    background: #0B0B0D80;
+    height: 100%;
+}
+.side-section-item{
+    padding: 15px 0;
+    color: #FFFFFF;
+    font-size: 17px;
+
+   
+}
+.logo{
+   
+    padding:40px 10px 0px 10px;
+}
+.right_section{
+    padding: 80px 20px 0;
+    margin-left: 70px;
+}
+.footer{
+    padding: 30px;
+    opacity: 0.25;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.side_section_content_lower{
+    margin-top: auto;
+}
+.home {
+    color: #A276FF;
+
+} 
+.simple_starter{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 35px;
+}
+.template{
+     color:#A276FF;
+     font-size: 85px;
+     font-weight: bold;
+ }
+p{
+    color: white;
+    padding: 20px 0;
+}
+.images{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content:start;
+    gap: 20px;
+}
+.news{
+    color: white;
+    font-size: 34px;
+}
+.secondpara{
+   font-size: 15px;
+}
+.firstpara{
+font-size: 20px;
+}
+.images img{
+    width: 100%;
+    max-width: 176px;
+}
+@media screen and (max-width: 1070px)
+{
+  .simple_starter{
+    font-size: 30px;
+    }
+    .template{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 970px)
+{
+  .images{
+    
+    
+    grid-template-columns: repeat(2,auto);
+  }
+  .right_section{
+      margin: 20px 0;
+  }
+  .simple_starter{
+      font-size: 18px;
+  }
+  .template{
+      font-size: 40px;
+  }
+  .firstpara{
+      font-size: 16px;
+
+  }
+  button{
+      font-size: 16px;
+      padding: 5px 20px;
+  }
+  .logo img{
+      width: 70px;
+  }
+  .footer{
+    padding: 10px;
+  }
+  .news{
+      font-size: 18px;
       
+  }
+  .news img{
+   width: 15px;
+  }
+  .container{
+      margin: 0;
+      grid-template-columns: 120px 1fr;
+
+  }
+  .footer{
+    padding: 15px 5px;
+    font-size: 8px;
+}
+.side-section-item{
+    font-size: 10px;
+}
+
+.right_section{
+    padding: 50px 15px;
+}
+}
